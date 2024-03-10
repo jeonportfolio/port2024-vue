@@ -2,11 +2,11 @@
 import { footerText } from "../constants";
 </script>
 <template>
-      <footer id="footer" role="contentinfo">
+     <footer id="footer" role="contentinfo">
         <div class="footer__inner">
             <div class="footer__text">
-                <span>webstoryboy</span>
-                <span>© webs</span>
+                <span></span>
+                <span></span>
             </div>
             <div class="footer__info">
                 <div class="left">
@@ -18,9 +18,9 @@ import { footerText } from "../constants";
                 <div class="right">
                     <h3>social</h3>
                     <ul>
-                        <li v-for="{footer, key} in footerText">
-                            <a :href="footer.link">{{footer.title}}</a>
-                            <em>{{footer.desc}}</em>
+                        <li v-for="(footer, key) in footerText" :key="key">
+                            <a :href="footer.link">{{ footer.title }}</a>
+                            <em>{{ footer.desc }}</em>
                         </li>
                     </ul>
                 </div>

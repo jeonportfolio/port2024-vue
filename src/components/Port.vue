@@ -26,7 +26,7 @@ import { portText } from "../constants";
 <style lang="scss">
 #port {
     width: 100%;
-    margin-top: 30vh;
+    margin-top: 20vh;
    
 }
 .port__inner {

@@ -21,7 +21,7 @@ import { skillText } from "@/constants/index";
 
 <style  lang="scss">
 .skill__inner {
-    padding: 16px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
 
@@ -30,6 +30,7 @@ import { skillText } from "@/constants/index";
     }
 
     .skill__title {
+        
         position: sticky;
         top: 70px;
         left: 0;

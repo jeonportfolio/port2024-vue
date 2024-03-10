@@ -42,6 +42,7 @@ import {introText} from "../constants"
 <style lang="scss">
     #intro {
     height: 100vh; 
+    margin-top: 60px;
 }
 
 .intro__inner {
@@ -51,7 +52,7 @@ import {introText} from "../constants"
     justify-content: flex-end;
     flex-direction: column; 
     padding: 16px;
-    margin-top: 60px;
+    
 
     @media (max-width: 800px){
         justify-content: center;

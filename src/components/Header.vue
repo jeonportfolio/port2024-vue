@@ -70,6 +70,7 @@ export default {
 #header {
     @include position-fixed;
     z-index: 10000;
+    
 }
 
 .header__inner {
@@ -77,6 +78,7 @@ export default {
     background-color:  rgba(116, 99, 99, 0.1);
     backdrop-filter: blur(15px);
     padding: 1rem;
+    height: 5vw;
     .header__logo {
         font-size: 1.5rem; //1rem은 16px기준 root기준으로 바뀐다.rem은 미세하게 바뀌는 것 
         text-align: center;
