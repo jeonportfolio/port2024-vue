@@ -19,6 +19,7 @@ import { headerNav } from "../constants";
                 <ul>
                     <li v-for="(nav, key) in headerNav" :key="key">
                         <a :href="nav.url" @click="scrollLink($event)">{{ nav.title }}</a>
+                        <!-- 클릭하면 event값을 가져온다. -->
                     </li>
                 </ul>
             </nav>
