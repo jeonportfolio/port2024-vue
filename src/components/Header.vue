@@ -19,6 +19,7 @@ import { headerNav } from "../constants";
                 <ul>
                     <li v-for="(nav, key) in headerNav" :key="key">
                         <a :href="nav.url" @click="scrollLink($event)">{{ nav.title }}</a>
+                        <!-- 클릭하면 event값을 가져온다. -->
                     </li>
                 </ul>
             </nav>
@@ -70,29 +71,31 @@ export default {
 #header {
     @include position-fixed;
     z-index: 10000;
-    
 }
 
 .header__inner {
     @include flex-between;
     background-color:  rgba(116, 99, 99, 0.1);
     backdrop-filter: blur(15px);
-    padding: 1rem;
-    height: 5vw;
+    
     .header__logo {
         font-size: 1.5rem; //1rem은 16px기준 root기준으로 바뀐다.rem은 미세하게 바뀌는 것 
         text-align: center;
         text-transform: uppercase;
         line-height: 1;
+
+        @media (max-width: 815px){
+            font-size: 1.3rem;
+        }   
         
         em {
-            font-size: 19px;
+            font-size: 17px;
             display: block;
             color: var(--black200);
         }
     }
     .header__nav {
-        @media (max-width: 800px){
+        @media (max-width: 815px){
             display: none;
 
             &.show { //show가 생겼을때 메뉴창이 나오게 하는 설정 
@@ -102,7 +105,7 @@ export default {
                     display: block;
                     position: absolute;
                     right: 0;
-                    top: 100px;
+                    top: 52px;
                     background-color: #e2e0e0;
                     opacity: 90%;
                     backdrop-filter: blur(15px);
@@ -164,7 +167,7 @@ export default {
         cursor: pointer;
         position: relative;
 
-        @media (max-width: 800px){
+        @media (max-width: 815px){
             display: block;
         }
         

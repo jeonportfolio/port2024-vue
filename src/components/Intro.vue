@@ -19,11 +19,33 @@ import {introText} from "../constants"
             <div class="intro__text">
                 <div class="text">
                     <div>{{ introText.desc[0]}}</div>
-                    <div>{{ introText.desc[1]}}</div>
-                    <div>{{ introText.desc[2]}}</div>
                 </div>
                 <div class="img">
                     <img src="@/assets/img/about.jpg" alt="어바웃" />
+                </div>
+                <div className="mini__image">
+                    <div className="img1">
+                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                    </div>
+                
+                    <div className="img2">
+                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                    </div>
+                    <div className="img3">
+                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                    </div>
+                </div>
+                <div className="mini__image2">
+                    <div className="img4">
+                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                    </div>
+                
+                    <div className="img5">
+                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                    </div>
+                    <div className="img6">
+                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                    </div>
                 </div>
             </div>
             <div class="intro__lines bottom" aria-hidden="true">
@@ -40,9 +62,8 @@ import {introText} from "../constants"
 </template>
 
 <style lang="scss">
-    #intro {
-    height: 100vh; 
-    margin-top: 60px;
+   #intro {
+    height: 100vh; //화면을 100등분해서 채웠다는 의미
 }
 
 .intro__inner {
@@ -50,24 +71,31 @@ import {introText} from "../constants"
     height: 100%;
     align-items: flex-start;
     justify-content: flex-end;
-    flex-direction: column; 
+    flex-direction: column; //줄바꿈을 해주어 선이 글씨 밑으로 나오게 하기 위함
     padding: 16px;
-    
+    margin-top: 60px;
 
     @media (max-width: 800px){
-        justify-content: center;
+        justify-content: center;// pc화면에서는 내려가 있다가 핸폰 화면에서는 중앙에 위치
 
     }
     
     .intro__title {
-        font-size: 10vw;
+        font-size: 9.7vw;
         text-transform: uppercase;
         line-height: 1;
         font-weight: 800;
-        white-space: nowrap;
-        text-indent: -0.5vw; 
+        white-space: nowrap;//글씨 한줄 만들기
+        text-indent: -0.5vw; //글씨 들여쓰기
         letter-spacing: -0.3vw;
-        margin-top: 20px;
+
+        @media(max-width: 1500px){
+            font-size: 9.3vw;
+        }
+
+        @media(max-width: 600px){
+            font-size: 8vw;
+        }
 
         @media(max-width: 320px){
             display: none;
@@ -95,37 +123,207 @@ import {introText} from "../constants"
             z-index: 100;
             transition: all 0.3s;
             cursor: all-scroll;
-
-            @media(max-width: 800px){
-                font-size: 24px;
+            margin-left: 150px;
+    
+            @media(max-width: 1300px){
+                font-size: 40px;
+            }
+            @media(max-width: 600px){
+                left:5%;
+            }
+            @media(max-width: 750px){
+                font-size: 30px;
+            }
+            @media(max-width: 600px){
+                left:5%;
+            }
+            @media(max-width: 550px){
+                    display: none;
             }
         }
+
+        
         .img {
             position: absolute;
-            left: 50%;
+            left: 20%;
             top: 50%;
             transform: translate(-50%, -50%);
             width: 30vh;
             height: 30vh;
             border-radius: 50%;
             overflow: hidden;
-            filter: grayscale(100%);
+            filter: grayscale(100%);//완전히 흑백으로 처리하게 하는 것이다.
             transition: all 0.3s;
 
-            @media(max-width: 320px){
+            @media(max-width: 1000px){
                 width: 20vh;
                 height: 20vh;
             }
+
+            @media(max-width: 550px){
+                width: 25vh;
+                height: 25vh;
+                left: 50%;
+            }
+
+            @media(max-width: 350px){
+                width: 15vh;
+                height: 15vh;
+                left: 50%;
+            }
+          
+          
+
         }
+        .mini__image {
+                display: inline-block;
+                
+                
+                @media(max-width: 550px){
+                    display: none;
+                }
+               
+                .img1{    
+                    position: absolute;
+                    left: 50%;
+                    top: 26%;
+                    transform: translate(-50%, -50%);
+                    width: 16vh;
+                    height: 16vh;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    transition: all 0.3s;
+                    opacity: 0;
+
+                    @media(max-width: 900px){
+                        width: 10vh;
+                        height: 10vh;
+                    }
+
+                   
+
+                }
+                .img2{    
+                    position: absolute;
+                    left: 65%;
+                    top: 26%;
+                    transform: translate(-50%, -50%);
+                    width: 16vh;
+                    height: 16vh;
+                    border-radius: 50%;
+                    overflow: hidden;
+                   
+                    transition: all 0.3s;
+                    opacity: 0;
+                    
+                    @media(max-width: 900px){
+                        width: 10vh;
+                        height: 10vh;           
+                    }
+                    
+                }
+                .img3{    
+                    position: absolute;
+                    left: 80%;
+                    top: 26%;
+                    transform: translate(-50%, -50%);
+                    width: 16vh;
+                    height: 16vh;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    transition: all 0.3s;
+                    opacity: 0;
+
+                    @media(max-width: 900px){
+                        width: 10vh;
+                        height: 10vh;
+                    }
+                   
+                }
+        }
+        .mini__image2 {
+            display: inline-block;
+
+
+            @media(max-width: 550px){
+                display: none;
+            }
+
+            h1 {
+                font-size: 1vw;
+            }
+           
+            .img4{    
+                position: absolute;
+                left: 50%;
+                top: 75%;
+                transform: translate(-50%, -50%);
+                width: 16vh;
+                height: 16vh;
+                border-radius: 50%;
+                overflow: hidden;
+                transition: all 0.3s;
+                opacity: 0;
+
+                @media(max-width: 900px){
+                    width: 10vh;
+                    height: 10vh;
+                }
+              
+            }
+            .img5{    
+                position: absolute;
+                left: 65%;
+                top: 75%;
+                transform: translate(-50%, -50%);
+                width: 16vh;
+                height: 16vh;
+                border-radius: 50%;
+                overflow: hidden;
+               
+                transition: all 0.3s;
+                opacity: 0;
+
+                @media(max-width: 900px){
+                    width: 10vh;
+                    height: 10vh;
+                }
+               
+            }
+            .img6{    
+                position: absolute;
+                left: 80%;
+                top: 75%;
+                transform: translate(-50%, -50%);
+                width: 16vh;
+                height: 16vh;
+                border-radius: 50%;
+                overflow: hidden;
+                transition: all 0.3s;
+                opacity: 0;
+
+                @media(max-width: 900px){
+                    width: 10vh;
+                    height: 10vh;
+                }
+              
+            }
+    }
+
+
+        
         
         &:hover .text {
             opacity: 0;
+        }
+        &:hover .text2, &:hover .img1, &:hover .img2, &:hover .img3 
+        , &:hover .img4, &:hover .img5, &:hover .img6{
+            opacity: 1;
         }
 
         &:hover .img {
             filter: grayscale(0);
         }
-        
     }
     .intro__lines {
        width: 100%;
@@ -168,7 +366,7 @@ import {introText} from "../constants"
                 margin-bottom: 0;
                 display: none;
 
-                @media (max-width: 800px){
+                @media (max-width: 1000px){
                     display: block;
                 }
 

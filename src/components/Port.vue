@@ -12,7 +12,9 @@ import { portText } from "../constants";
             <div class="port__wrap">
                 <div class="port__item" v-for="(port, key) in portText" :key="key">
                     <span class="num">{{ port.num }}.</span>
-                    <img :src="port.img" :alt="port.name" />
+                    <a :href="port.code" target="_blank" class="img">
+                        <img :src="port.img" :alt="port.name" />
+                    </a>
                     <h3 class="title">{{ port.title }}</h3>
                     <p class="desc">{{ port.desc }}</p>
                     <a :href="port.view" target="_blank" class="site">사이트 보기</a>
@@ -21,13 +23,44 @@ import { portText } from "../constants";
         </div>
     </section>
 </template> 
+<script>
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
+export default {
+    mounted: function() {
+        this.ScrollAnimation();
+    },
+    methods: {
+        ScrollAnimation(){
+            const horSection = gsap.utils.toArray(".port__item");
+
+            gsap.to(horSection, {
+                xPercent: -120 * (horSection.length - 1),
+                ease: "none",
+                scrollTrigger: {
+                    trigger: "#port",
+                    start: "top 56px",
+                    end: "+=3000",
+                    pin: true,
+                    scrub: 1,
+                    markers: false,
+                    invalidateOnRefresh: true,
+                    anticipatePin: 1,
+                },
+            });
+
+        }
+    }
+}
+</script>
 
 <style lang="scss">
 #port {
     width: 100%;
-    margin-top: 20vh;
-   
+    margin-top: 30vh;
+    // overflow: hidden;
 }
 .port__inner {
     padding: 16px;
@@ -60,37 +93,37 @@ import { portText } from "../constants";
             width: 500px;
             height: 100vh;
             background-color: var(--subBg100);
-            padding: 2.5rem;
+            padding: 1.5rem;
             margin-right: 20px;
 
-            &.p1 {
+            &:nth-child(1) {
                 background-color: var(--subBg100);
             }
-            &.p2 {
+            &:nth-child(2) {
                 background-color: var(--subBg200);
             }
-            &.p3 {
+            &:nth-child(3) {
                 background-color: var(--subBg300);
             }
-            &.p4 {
+            &:nth-child(4) {
                 background-color: var(--subBg400);
             }
-            &.p5 {
+            &:nth-child(5) {
                 background-color: var(--subBg500);
             }
-            &.p6 {
+            &:nth-child(6) {
                 background-color: var(--subBg100);
             }
-            &.p7 {
+            &:nth-child(7) {
                 background-color: var(--subBg200);
             }
-            &.p8 {
+            &:nth-child(8) {
                 background-color: var(--subBg300);
             }
-            &.p9 {
+            &:nth-child(9) {
                 background-color: var(--subBg400);
             }
-            &.p10 {
+            &:nth-child(10) {
                 background-color: var(--subBg500);
             }
             .num {
@@ -99,8 +132,8 @@ import { portText } from "../constants";
             }
             .img {
                 display: block;
-                margin-top: 20px;
-                transition: margin-top 0.3s;
+                transition: margin-top 0.4s;
+                margin-top: 5px;
 
                 img {
                     border-radius: 5px;
@@ -120,7 +153,7 @@ import { portText } from "../constants";
             .title {
                 font-size: 1.5rem;
                 text-align: center;
-                padding: 0.8rem 0;
+                padding: 0.3rem 0;
                 font-weight: 700;
                 color: var(--black100);
                 border-bottom: 2px solid var(--black100);
