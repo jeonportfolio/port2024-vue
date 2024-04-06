@@ -84,7 +84,7 @@ export default {
         text-transform: uppercase;
         line-height: 1;
 
-        @media (max-width: 815px){
+        @media (max-width: 830px){
             font-size: 1.3rem;
         }   
         
@@ -95,7 +95,7 @@ export default {
         }
     }
     .header__nav {
-        @media (max-width: 815px){
+        @media (max-width: 830px){
             display: none;
 
             &.show { //show가 생겼을때 메뉴창이 나오게 하는 설정 
@@ -167,7 +167,7 @@ export default {
         cursor: pointer;
         position: relative;
 
-        @media (max-width: 815px){
+        @media (max-width: 830px){
             display: block;
         }
         

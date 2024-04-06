@@ -66,7 +66,10 @@ export default {
     padding: 16px;
 
     .port__title {
-        width: 100%;
+        position: sticky;
+        top: 70px;
+        left: 0;
+        width: 70%;
         height: 5vw;
         font-size: 4vw;
         font-weight: 900;
@@ -75,13 +78,23 @@ export default {
         text-transform: uppercase;
         color: var(--black100);
         border-bottom: 0.4vw solid var(--black100);
-        margin-bottom: 16px;
-        text-indent: -0.26vw;
+        margin-bottom: 10px;
+
+        @media (max-width: 800px){
+            width: 100%;
+            margin-bottom: 1vw;
+            font-size: 30px;
+            height: auto;
+            top: 68px;
+            z-index: 1000;
+            background-color: var(--mainBg-color);
+        }
 
         em {
             font-size: 1.25rem;
             font-weight: 400;
             line-height: 2;
+
         }
     }
     .port__wrap {

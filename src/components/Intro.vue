@@ -152,10 +152,10 @@ import {introText} from "../constants"
             height: 30vh;
             border-radius: 50%;
             overflow: hidden;
-            filter: grayscale(100%);//완전히 흑백으로 처리하게 하는 것이다.
+            filter: grayscale(100%);
             transition: all 0.3s;
 
-            @media(max-width: 1000px){
+            @media(max-width: 870px){
                 width: 20vh;
                 height: 20vh;
             }

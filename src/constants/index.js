@@ -108,8 +108,8 @@ export const introText = {
 export const portText = [
     {
         num: "01",
-        title: "어워드에도 올라간 포트폴리오",
-        desc: " 기술력이 빛을 발휘한 결과물인 것 같습니다.",
+        title: "웹디자인기능사",
+        desc: "웹디자인기능사 실습 공부를 통해 만든 사이트입니다. html,css,jquery를 통해 만들었습니다. ",
         img: port01,
         code: "/",
         view: "/",
