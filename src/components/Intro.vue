@@ -20,33 +20,36 @@ import {introText} from "../constants"
                 <div class="text">
                     <div>{{ introText.desc[0]}}</div>
                 </div>
-                <div class="img">
+                <div className="img">
                     <img src="@/assets/img/about.jpg" alt="어바웃" />
                 </div>
                 <div className="mini__image">
                     <div className="img1">
-                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                        <p>REACT.JS</p>
+                    </div>
+                    <div className="img2">
+                        <p>REACT NATIVE</p>
                     </div>
                 
-                    <div className="img2">
-                        <img src="@/assets/img/about.jpg" alt="어바웃" />
-                    </div>
+                   
                     <div className="img3">
-                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                        <p>NODE.JS </p>
                     </div>
                 </div>
                 <div className="mini__image2">
-                    <div className="img4">
-                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                    <div className="img1">
+                        <p>HTML<br/>&CSS</p>
+                    </div>
+                    <div className="img2">
+                        <p>SQL</p>
                     </div>
                 
-                    <div className="img5">
-                        <img src="@/assets/img/about.jpg" alt="어바웃" />
-                    </div>
-                    <div className="img6">
-                        <img src="@/assets/img/about.jpg" alt="어바웃" />
+                   
+                    <div className="img3">
+                        <p>NODE.JS </p>
                     </div>
                 </div>
+
             </div>
             <div class="intro__lines bottom" aria-hidden="true">
                 <span class="line"></span>
@@ -62,7 +65,7 @@ import {introText} from "../constants"
 </template>
 
 <style lang="scss">
-   #intro {
+  #intro {
     height: 100vh; //화면을 100등분해서 채웠다는 의미
 }
 
@@ -152,10 +155,10 @@ import {introText} from "../constants"
             height: 30vh;
             border-radius: 50%;
             overflow: hidden;
-            filter: grayscale(100%);
+            filter: grayscale(100%);//완전히 흑백으로 처리하게 하는 것이다.
             transition: all 0.3s;
 
-            @media(max-width: 870px){
+            @media(max-width: 1000px){
                 width: 20vh;
                 height: 20vh;
             }
@@ -177,138 +180,218 @@ import {introText} from "../constants"
         }
         .mini__image {
                 display: inline-block;
-                
-                
-                @media(max-width: 550px){
-                    display: none;
-                }
-               
+
                 .img1{    
                     position: absolute;
                     left: 50%;
-                    top: 26%;
-                    transform: translate(-50%, -50%);
-                    width: 16vh;
+                    top: 24%;
+                    transform: translate(-40%, 0%);
+                    width: 18vh;
                     height: 16vh;
-                    border-radius: 50%;
                     overflow: hidden;
                     transition: all 0.3s;
                     opacity: 0;
+                   
+
+                  p {
+                    font-size: 1.5rem;
 
                     @media(max-width: 900px){
-                        width: 10vh;
-                        height: 10vh;
-                    }
+                        font-size: 1rem;
+                    }  
+                  }
 
-                   
-
-                }
-                .img2{    
-                    position: absolute;
-                    left: 65%;
-                    top: 26%;
-                    transform: translate(-50%, -50%);
-                    width: 16vh;
-                    height: 16vh;
-                    border-radius: 50%;
-                    overflow: hidden;
-                   
-                    transition: all 0.3s;
-                    opacity: 0;
+                  @media(max-width: 900px){
+                    width: 13vh;
+                    height: 13vh;
                     
-                    @media(max-width: 900px){
-                        width: 10vh;
-                        height: 10vh;           
-                    }
-                    
+    
+                }  
+
                 }
-                .img3{    
+
+                @media(max-width: 550px){
+                        display: none;
+                 }
+            
+                 .img2{    
                     position: absolute;
-                    left: 80%;
-                    top: 26%;
-                    transform: translate(-50%, -50%);
-                    width: 16vh;
+                    left: 70%;
+                    top: 18%;
+                    transform: translate(-40%, 0%);
+                    width: 18vh;
                     height: 16vh;
-                    border-radius: 50%;
                     overflow: hidden;
                     transition: all 0.3s;
                     opacity: 0;
+                   
+
+                  p {
+                    font-size: 1.5rem;
 
                     @media(max-width: 900px){
-                        width: 10vh;
-                        height: 10vh;
-                    }
-                   
+                        font-size: 1rem;
+                    }  
+                  }
+
+                  @media(max-width: 900px){
+                    width: 13vh;
+                    height: 13vh;
+                    
+    
+                }  
+
                 }
+
+                @media(max-width: 550px){
+                        display: none;
+                        .img2{    
+                            position: absolute;
+                            top: 26%;
+                        }
+                 }
+
+                 .img3{    
+                    position: absolute;
+                    left: 90%;
+                    top:  24%;
+                    transform: translate(-40%, 0%);
+                    width: 18vh;
+                    height: 16vh;
+                    overflow: hidden;
+                    transition: all 0.3s;
+                    opacity: 0;
+                   
+
+                  p {
+                    font-size: 1.5rem;
+
+                    @media(max-width: 900px){
+                        font-size: 1rem;
+                    }  
+                  }
+
+                  @media(max-width: 900px){
+                    width: 13vh;
+                    height: 13vh;
+                    
+    
+                }  
+
+                }
+
+                @media(max-width: 550px){
+                        display: none;
+                 }
         }
+
         .mini__image2 {
             display: inline-block;
 
-
-            @media(max-width: 550px){
-                display: none;
-            }
-
-            h1 {
-                font-size: 1vw;
-            }
-           
-            .img4{    
+            .img1{    
                 position: absolute;
                 left: 50%;
-                top: 75%;
-                transform: translate(-50%, -50%);
-                width: 16vh;
+                top: 60%;
+                transform: translate(-40%, 0%);
+                width: 18vh;
                 height: 16vh;
-                border-radius: 50%;
                 overflow: hidden;
                 transition: all 0.3s;
                 opacity: 0;
-
-                @media(max-width: 900px){
-                    width: 10vh;
-                    height: 10vh;
-                }
-              
-            }
-            .img5{    
-                position: absolute;
-                left: 65%;
-                top: 75%;
-                transform: translate(-50%, -50%);
-                width: 16vh;
-                height: 16vh;
-                border-radius: 50%;
-                overflow: hidden;
                
-                transition: all 0.3s;
-                opacity: 0;
+
+              p {
+                font-size: 1.5rem;
 
                 @media(max-width: 900px){
-                    width: 10vh;
-                    height: 10vh;
-                }
-               
+                    font-size: 1rem;
+                }  
+              }
+
+              @media(max-width: 900px){
+                width: 13vh;
+                height: 13vh;
+                
+
+            }  
+
             }
-            .img6{    
+
+            @media(max-width: 550px){
+                    display: none;
+             }
+        
+             .img2{    
                 position: absolute;
-                left: 80%;
-                top: 75%;
-                transform: translate(-50%, -50%);
-                width: 16vh;
+                left: 70%;
+                top: 60%;
+                transform: translate(-40%, 0%);
+                width: 18vh;
                 height: 16vh;
-                border-radius: 50%;
                 overflow: hidden;
                 transition: all 0.3s;
                 opacity: 0;
+               
+
+              p {
+                font-size: 1.5rem;
 
                 @media(max-width: 900px){
-                    width: 10vh;
-                    height: 10vh;
-                }
-              
+                    font-size: 1rem;
+                }  
+              }
+
+              @media(max-width: 900px){
+                width: 13vh;
+                height: 13vh;
+                
+
+            }  
+
             }
+
+            @media(max-width: 550px){
+                    display: none;
+                    .img2{    
+                        position: absolute;
+                        top: 26%;
+                    }
+             }
+
+             .img3{    
+                position: absolute;
+                left: 90%;
+                top:  60%;
+                transform: translate(-40%, 0%);
+                width: 18vh;
+                height: 16vh;
+                overflow: hidden;
+                transition: all 0.3s;
+                opacity: 0;
+               
+
+              p {
+                font-size: 1.5rem;
+
+                @media(max-width: 900px){
+                    font-size: 1rem;
+                }  
+              }
+
+              @media(max-width: 900px){
+                width: 13vh;
+                height: 13vh;
+                
+
+            }  
+
+            }
+
+            @media(max-width: 550px){
+                    display: none;
+             }
     }
+
 
 
         
@@ -395,5 +478,4 @@ import {introText} from "../constants"
         }
     }
 }
-
 </style>

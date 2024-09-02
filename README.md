@@ -6,9 +6,9 @@
 각 프레임워크들의 장단점을 비교 분석하며 학습하게 됩니다.
 
 
-1. [react.js](https://github.com/webstoryboy/port2023-react)를 이용하여 사이트를 제작합니다. 
-2. [vue.js](https://github.com/webstoryboy/port2023-vue)를 이용하여 사이트를 제작합니다.
-3. [next.js](https://github.com/webstoryboy/port2023-next)를 이용하여 사이트를 제작합니다.
+1. [react.js]()를 이용하여 사이트를 제작합니다. 
+2. [vue.js]()를 이용하여 사이트를 제작합니다.
+3. [next.js]()를 이용하여 사이트를 제작합니다.
 
 이 튜토리얼은 포트폴리오 컨셉의 사이트를 4가지 버전으로 반복하여 만들어 보면서, 프론트앤드 개발의 시발점이 될 수 있는 튜토리업입니다.
 자바스크립트 프레임워크를 통해 사이트를 효율적으로 만들어 보는 방법을 익힙니다. 
@@ -30,6 +30,4 @@
 - sass를 설치합니다. `npm install sass`
 - gsap를 설치합니다. `npm install gsap`
 - lenis를 설치합니다. `npm install @studio-freight/lenis`
-출처: https://webstoryboy.co.kr/1944 [WEBSTORYBOY:티스토리]
-npm run build
-```
+                    `npm run build`
