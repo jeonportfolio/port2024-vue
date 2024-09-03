@@ -43,7 +43,7 @@ import { siteText } from "../constants";
 
     .site__title {
         position: sticky;
-        top: 70px;
+        top: 65px;
         left: 0;
         width: 70%;
         height: 5vw;
@@ -52,8 +52,7 @@ import { siteText } from "../constants";
         line-height: 1.6;
         font-family: var(--mainKor-font);
         text-transform: uppercase;
-        color: var(--black100);
-        border-bottom: 0.4vw solid var(--black100);
+        border-bottom: 0.4vw solid #fff;
         margin-bottom: 100px;
 
         @media (max-width: 800px){
@@ -61,7 +60,7 @@ import { siteText } from "../constants";
             margin-bottom: 10vw;
             font-size: 30px;
             height: auto;
-            top: 68px;
+            top: 53px;
             z-index: 1000;
             background-color: var(--mainBg-color);
         }
@@ -72,6 +71,7 @@ import { siteText } from "../constants";
             line-height: 2;
 
         }
+  
     }
     .site__wrap {
         .site__item {

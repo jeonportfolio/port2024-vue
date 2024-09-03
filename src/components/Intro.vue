@@ -77,6 +77,7 @@ import {introText} from "../constants"
     flex-direction: column; //줄바꿈을 해주어 선이 글씨 밑으로 나오게 하기 위함
     padding: 16px;
     margin-top: 60px;
+   
 
     @media (max-width: 800px){
         justify-content: center;// pc화면에서는 내려가 있다가 핸폰 화면에서는 중앙에 위치
@@ -91,6 +92,7 @@ import {introText} from "../constants"
         white-space: nowrap;//글씨 한줄 만들기
         text-indent: -0.5vw; //글씨 들여쓰기
         letter-spacing: -0.3vw;
+        color:#fff;
 
         @media(max-width: 1500px){
             font-size: 9.3vw;
@@ -107,7 +109,7 @@ import {introText} from "../constants"
     .intro__text {
         width: 100%;
         height: 40vh;
-        background-color: var(--black);
+        background-color: #0a1533;
         color: var(--white);
         display: flex;
         align-items: center;
@@ -127,6 +129,7 @@ import {introText} from "../constants"
             transition: all 0.3s;
             cursor: all-scroll;
             margin-left: 150px;
+            
     
             @media(max-width: 1300px){
                 font-size: 40px;
@@ -195,6 +198,7 @@ import {introText} from "../constants"
 
                   p {
                     font-size: 1.5rem;
+                
 
                     @media(max-width: 900px){
                         font-size: 1rem;
@@ -416,7 +420,7 @@ import {introText} from "../constants"
             display: block;
             width: 100%;
             height: 1px;
-            background-color: var(--black);
+            background-color: #0a1533;
             margin-bottom: 0.5vw;
 
             &:nth-child(1) {
@@ -435,7 +439,7 @@ import {introText} from "../constants"
                 height: 9px;
             }
             &:nth-child(6) {
-                height: 17px;
+                height: 12px;
             }
 
             &:nth-child(7) {
@@ -448,19 +452,20 @@ import {introText} from "../constants"
                 margin-top: 0.5vw;
                 margin-bottom: 0;
                 display: none;
+                color: #0a1533;
 
                 @media (max-width: 1000px){
                     display: block;
                 }
 
                 &:nth-child(1){
-                    height: 25px;
-                }
-                &:nth-child(2){
                     height: 17px;
                 }
+                &:nth-child(2){
+                    height: 15px;
+                }
                 &:nth-child(3){
-                    height: 13px;
+                    height: 11px;
                 }
                 &:nth-child(4){
                     height: 9px;

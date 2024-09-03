@@ -18,8 +18,8 @@ import { skillText } from "@/constants/index";
                             <span>3.</span> 
                             <h3>학력 및 자격사항</h3>
                             <p > ▶한국공학대학교(IT경영학과)(2019.03 ~ 2025.02)<br/>
-                                 ▶머니스테이션(인턴과정(실습 및 파트) 2024.01.02 ~ 2024.10.05)(마케팅부서) <br/>
                                  ▶웹디자인 기능사<br/>
+                                 ▶머니스테이션(인턴과정(실습 및 파트) 2024.01.02 ~ 2024.10.05)(마케팅부서) <br/>
                                  ▶OPIC IH등급<br/>
                                  ▶SQLD<br/>
                                  ▶컴퓨터활용능력2급<br/>
@@ -28,7 +28,7 @@ import { skillText } from "@/constants/index";
                                  ▶바리스타 2급 <br/>
                             </p>
                         </div>
-            </div>
+            </div>            
         </div>
     </section>
 </template> 
@@ -46,7 +46,7 @@ import { skillText } from "@/constants/index";
     .skill__title {
         
         position: sticky;
-        top: 70px;
+        top: 65px;
         left: 0;
         height: 5vw;
         font-size: 4vw;
@@ -54,7 +54,7 @@ import { skillText } from "@/constants/index";
         line-height: 1.6;
         font-family: var(--mainKor-font);
         text-transform: uppercase;
-        color: var(--black);
+
         border-bottom: 0.4vw solid var(--black100);
 
         @media (max-width: 800px){
@@ -62,7 +62,7 @@ import { skillText } from "@/constants/index";
             margin-bottom: 10vw;
             font-size: 30px;
             height: auto;
-            top: 68px;
+            top: 53px;
             background-color: var(--mainBg-color);
         }
     
@@ -72,6 +72,9 @@ import { skillText } from "@/constants/index";
             font-weight: 400;
             line-height: 2;
         }
+    
+
+     
     }
     .skill__desc {
         width: 50%;
@@ -87,7 +90,6 @@ import { skillText } from "@/constants/index";
             font-weight: 900;
             line-height: 1.3;
             font-family: var(--mainNum-font);
-
             @media (max-width: 800px){
                font-size: 20vw;
              }

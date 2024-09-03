@@ -42,7 +42,7 @@ export default {
                 scrollTrigger: {
                     trigger: "#port",
                     start: "top 56px",
-                    end: "+=3000",
+                    end: "+=8000",
                     pin: true,
                     scrub: 1,
                     markers: false,
@@ -76,8 +76,8 @@ export default {
         line-height: 1.6;
         font-family: var(--mainKor-font);
         text-transform: uppercase;
-        color: var(--black100);
-        border-bottom: 0.4vw solid var(--black100);
+
+        border-bottom: 0.4vw solid #fff;
         margin-bottom: 10px;
 
         @media (max-width: 800px){
@@ -85,7 +85,7 @@ export default {
             margin-bottom: 1vw;
             font-size: 30px;
             height: auto;
-            top: 68px;
+            top: 53px;
             z-index: 1000;
             background-color: var(--mainBg-color);
         }
@@ -96,6 +96,7 @@ export default {
             line-height: 2;
 
         }
+   
     }
     .port__wrap {
         display: flex;

@@ -7,7 +7,7 @@ import { headerNav } from "../constants";
         <div class="header__inner">
             <div class="header__logo">
                 <h1>
-                    <a href="#">portfolio<em>vue.js</em></a>
+                    <a href="#">portfolio<em>vue.js(DARK MODE)</em></a>
                 </h1>
             </div>
             <nav 
@@ -75,7 +75,7 @@ export default {
 
 .header__inner {
     @include flex-between;
-    background-color:  rgba(116, 99, 99, 0.1);
+    background-color:  rgba(10, 10, 10, 0.825);
     backdrop-filter: blur(15px);
     
     .header__logo {
@@ -83,6 +83,7 @@ export default {
         text-align: center;
         text-transform: uppercase;
         line-height: 1;
+        color: #fff;
 
         @media (max-width: 830px){
             font-size: 1.3rem;
@@ -91,7 +92,7 @@ export default {
         em {
             font-size: 17px;
             display: block;
-            color: var(--black200);
+            color: #d9d9d9;
         }
     }
     .header__nav {
@@ -106,7 +107,7 @@ export default {
                     position: absolute;
                     right: 0;
                     top: 52px;
-                    background-color: #e2e0e0;
+                    background-color: #434040;
                     opacity: 90%;
                     backdrop-filter: blur(15px);
                     z-index: 10000;
@@ -120,6 +121,7 @@ export default {
                         a {
                             display: inline-block;
                             padding: 10px;
+                            color: #fff;
                         }
                     }
                 }
@@ -141,12 +143,13 @@ export default {
                 font-size: 20px;
                 padding: 14px;
                 position: relative;
+                color:#fff;
     
                 &::before {       //메뉴명에 밑줄생김
                     content: '';
                     width: calc(100% - 28px);
                     height: 1px;
-                    background-color: var(--black);
+                    background-color:#fff;
                     position: absolute;
                     left: 14px;
                     bottom: 10px;
