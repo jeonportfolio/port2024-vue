@@ -102,7 +102,7 @@ import { contactText } from "../constants";
             display: block;
             width: 100%;
             height: 1px;
-            background-color: var(--black);
+            background-color: #fff;
             margin-bottom: 0.5vw;
 
             &:nth-child(1){

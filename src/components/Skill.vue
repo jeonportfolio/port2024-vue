@@ -17,7 +17,7 @@ import { skillText } from "@/constants/index";
                 <div>
                             <span>3.</span> 
                             <h3>학력 및 자격사항</h3>
-                            <p > ▶한국공학대학교(IT경영학과)(2019.03 ~ 2025.02)<br/>
+                            <p > ▶한국공학대학교(IT경영학과)(2019.03 ~ 2025.02(졸업예정))<br/>
                                  ▶웹디자인 기능사<br/>
                                  ▶머니스테이션(인턴과정(실습 및 파트) 2024.01.02 ~ 2024.10.05)(마케팅부서) <br/>
                                  ▶OPIC IH등급<br/>
@@ -54,8 +54,7 @@ import { skillText } from "@/constants/index";
         line-height: 1.6;
         font-family: var(--mainKor-font);
         text-transform: uppercase;
-
-        border-bottom: 0.4vw solid var(--black100);
+        border-bottom: 0.4vw solid #fff;
 
         @media (max-width: 800px){
             width: 100%;

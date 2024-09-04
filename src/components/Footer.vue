@@ -42,8 +42,8 @@ import { footerText } from "../constants";
     .footer__text {
         font-size: 12px;
         text-transform: uppercase;
-        border-top: 1px solid var(--black);
-        border-bottom: 1px solid var(--black);
+        border-top: 1px solid var #fff;
+        border-bottom: 1px solid #fff;
         display: flex;
         justify-content: space-between;
     }
@@ -64,8 +64,8 @@ import { footerText } from "../constants";
             }
 
             .title {
-                border-top: 2px solid var(--black);
-                border-bottom: 1px solid var(--black);
+                border-top: 2px solid #fff;
+                border-bottom: 1px solid #fff;
                 padding: 20px 0;
                 text-transform: uppercase;
                 font-weight: 700;
@@ -73,7 +73,7 @@ import { footerText } from "../constants";
                 transition: all 0.3s;
 
                 &:hover {
-                    background-color: var(--black400);
+                    background-color: #fff;
                     padding-left: 10px;
                     border-color: transparent;  
                 }
@@ -97,16 +97,16 @@ import { footerText } from "../constants";
             }
 
             h3 {
-                border-top: 2px solid var(--black);
+                border-top: 2px solid #fff;
                 font-size: 10px;
                 margin-bottom: 40px;
                 padding-top: 10px;
             }
             ul {
-                border-top: 1px solid var(--black);
+                border-top: 1px solid #fff;
 
                 li {
-                    border-bottom: 1px solid var(--black);
+                    border-bottom: 1px solid #fff;
 
                     a {
                         padding: 14px 0;

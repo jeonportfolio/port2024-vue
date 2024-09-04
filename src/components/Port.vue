@@ -42,7 +42,7 @@ export default {
                 scrollTrigger: {
                     trigger: "#port",
                     start: "top 56px",
-                    end: "+=8000",
+                    end: "+=4000",
                     pin: true,
                     scrub: 1,
                     markers: false,
@@ -63,7 +63,7 @@ export default {
     // overflow: hidden;
 }
 .port__inner {
-    padding: 16px;
+    padding: 14px;
 
     .port__title {
         position: sticky;
@@ -169,8 +169,8 @@ export default {
                 text-align: center;
                 padding: 0.3rem 0;
                 font-weight: 700;
-                color: var(--black100);
-                border-bottom: 2px solid var(--black100);
+                color: #fff;
+                border-bottom: 2px solid #fff;
                 margin-bottom: 1rem;
             }
             .desc {

@@ -106,7 +106,7 @@ export const introText = {
 export const portText = [
     {
         num: "01",
-        title: "웹디자인기능사 공부법 관련 사이트",
+        title: "웹디자인기능사 공부법 사이트(PC화면)",
         desc: "피그마 & HTML & CSS를 웹디자인기능사 기술을 활용한 사이트입니다. 저의 웹디자인기능사 공부법을 공유하였습니다.",
         img: port01,
         code: "https://github.com/jeonportfolio/FIGMA-WEB",
@@ -115,8 +115,8 @@ export const portText = [
     },
     {
         num: "02",
-        title: "나만의 유튜브 사이트",
-        desc: "REACT를 활용해 나만의 자기개발 관련 카테고리를 구성한 유튜브 사이트 입니다.API를 활용해 검색과 영상재생이 가능합니다.",
+        title: "나만의 유튜브 사이트(반응형)",
+        desc: "REACT & RAPID API를 활용해 나만의 자기개발 카테고리 유튜브 사이트 입니다 검색과 영상재생이 가능합니다. ★모바일에서 메뉴 생성은 로고클릭!!",
         img: port02,
         code: "https://react-myyoutube.netlify.app",
         view: "https://react-myyoutube.netlify.app",
@@ -210,18 +210,18 @@ export const contactText = [
 
   export const footerText = [
     {
-        title: "youtube",
-        desc: "유튜브",
-        link: "/",
+        title: "BLOG",
+        desc: "블로그",
+        link: "https://blog.naver.com/turtleweb",
     },
     {
         title: "github",
-        desc: "깃헙",
-        link: "/",
+        desc: "깃허브",
+        link: "https://github.com/jeonportfolio",
     },
     {
-        title: "blog",
-        desc: "블로그",
+        title: "LINKED IN",
+        desc: "링크드인",
         link: "/",
     },
     {
