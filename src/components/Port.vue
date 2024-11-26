@@ -77,7 +77,7 @@ export default {
         font-family: var(--mainKor-font);
         text-transform: uppercase;
 
-        border-bottom: 0.4vw solid #fff;
+        border-bottom: 0.2vw solid #fff;
         margin-bottom: 10px;
 
         @media (max-width: 800px){
@@ -170,14 +170,14 @@ export default {
                 padding: 0.3rem 0;
                 font-weight: 700;
                 color: #fff;
-                border-bottom: 2px solid #fff;
+                border-bottom: 4px solid #fff;
                 margin-bottom: 1rem;
             }
             .desc {
                 font-size: 1rem;
             }
             .site {
-                border: 1px solid var(--black100);
+                border: 1px solid var(--white);
                 display: block;
                 text-align: center;
                 padding: 0.625rem 1.5rem;
@@ -185,8 +185,8 @@ export default {
                 transition: all 0.2s;
 
                 &:hover {
-                    background-color: var(--black100);
-                    color: var(--white);
+                    background-color: #c3c3c3;
+                    color: var(--black100);
                 }
             }
         }

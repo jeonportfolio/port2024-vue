@@ -6,7 +6,7 @@ import { siteText } from "../constants";
      <section id="site">
         <div class="site__inner">
             <h2 class="site__title">
-                Site coding <em>나의 작업물</em>
+                Site coding <em>다양한 프레임워크</em>
             </h2>
             <div class="site__wrap">
                 <article class="site__item" v-for="(site, key) in siteText" :key="key">
@@ -20,8 +20,8 @@ import { siteText } from "../constants";
                         {{ site.title }}
                     </h3>
                     <div class="btn">
-                        <a :href="site.code">code</a>
-                        <a :href="site.view">view</a>
+                        <a :href="site.code"  target="_blank">code</a>
+                        <a :href="site.view"  target="_blank">view</a>
                     </div>
                     <div class="info">
                         <span>{{ site.info[0] }}</span>
@@ -52,7 +52,7 @@ import { siteText } from "../constants";
         line-height: 1.6;
         font-family: var(--mainKor-font);
         text-transform: uppercase;
-        border-bottom: 0.4vw solid #fff;
+        border-bottom: 0.2vw solid #fff;
         margin-bottom: 100px;
 
         @media (max-width: 800px){
@@ -158,13 +158,13 @@ import { siteText } from "../constants";
                 a {
                     text-decoration: underline;
                     text-transform: uppercase;
-                    color: var(--black200);
-                    font-size: 1rem;
+                    color: #d2de34;
+                    font-size: 1.3rem;
                     transition: all 0.3s;
                     margin: 0 2px;
 
                     &:hover {
-                        color: var(--black);
+                        color: #fff;
                     }
                 }
                
@@ -173,7 +173,7 @@ import { siteText } from "../constants";
             .info {
                 position: absolute;
                 left: 0;
-                bottom: 3%;
+                bottom: 10%;
                 width: 98%;
                 margin-left: 1%;
                 border-top: 1px solid var(--black);
@@ -186,11 +186,13 @@ import { siteText } from "../constants";
                     width: 90%;
                     margin-left: 5%;
                     padding: 5px 0;
+                    font-size: 16px;
+
                 }
 
                 span {
                     font-family: var(--mainKor-font);
-                    font-size: 12px;
+                    font-size: 18px;
                     padding: 3px 0;
                     text-transform: uppercase;
                 }

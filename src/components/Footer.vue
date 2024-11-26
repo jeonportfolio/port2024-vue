@@ -11,9 +11,9 @@ import { footerText } from "../constants";
             <div class="footer__info">
                 <div class="left">
                     <div class="title">
-                        <a href="#">sign up</a>
+                        <a href="#">😄</a>
                     </div>
-                    <p>회원가입을 하시면 댓글과 게시판 기능을 이용할 수 있습니다.</p>
+                    <p>읽어주셔서 감사합니다.</p>
                 </div>
                 <div class="right">
                     <h3>social</h3>
