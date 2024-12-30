@@ -1,4 +1,5 @@
 import port01 from "../assets/img/port01.jpg"
+import port001 from "../assets/img/port001.jpg"
 import port02 from "../assets/img/port02.jpg"
 import port03 from "../assets/img/port03.jpg"
 import port04 from "../assets/img/port04.jpg"
@@ -96,6 +97,15 @@ export const portText = [
     },
     {
         num: "02",
+        title: "할 일 기록 사이트(REACT)",
+        desc: "useReducer와 useEffect, LocalStorage, Context API를 활용해 할 일 관리 사이트를 제작했습니다. 또한, Emotion과 Tailwind CSS를 사용하여 스타일링 버전도 구현했습니다.",
+        img: port001,
+        code: "https://github.com/jeonportfolio/Todo-List-React",
+        view: "https://today-todo-react.netlify.app/",
+        name: "REACT 할 일 기록 사이트",
+    },
+    {
+        num: "03",
         title: "나만의 유튜브 사이트(반응형)",
         desc: "REACT & RAPID API를 활용해 나만의 자기개발 관련 카테고리를 구성한 유튜브 사이트 입니다 검색과 영상재생이 가능합니다. ★모바일에서 메뉴 생성은 로고클릭!! ",
         img: port02,
@@ -104,7 +114,7 @@ export const portText = [
         name: "나만의 youtube",
     },
     {
-        num: "03",
+        num: "04",
         title: "블로그 소개 페이지(PC버젼)",
         desc: "HTML/CSS/JAVA SCRIPT를 사용하여 자격증/aws/공모전 등 활동 기록들을 소개하는 페이지입니다. ",
         img: port03,
@@ -113,7 +123,7 @@ export const portText = [
         name: "블로그 소개",
     },
     {
-        num: "04",
+        num: "05",
         title: "인턴과정 소개 (PC 버젼)",
         desc: "GSAP을 활용한 애니메이션을 추가하여 저의 인턴활동 과정을 소개하는 페이지입니다",
         img: port04,
@@ -122,7 +132,7 @@ export const portText = [
         name: "인턴과정 소개",
     },
     {
-        num: "05",
+        num: "06",
         title: "게임 소개 페이지 (반응형)",
         desc: "GSAP을 활용해 javascript를 이용해 만든 3종 게임 소개 페이지 입니다.(새끼거북의 여행 & 지구를 지켜라 & 테트리스)",
         img: port05,
@@ -131,7 +141,7 @@ export const portText = [
         name: "GSAP게임소개",
     },
     {
-        num: "06",
+        num: "07",
         title: "영화검색 사이트(반응형)",
         desc: "OMDb API를 활용해 store&router 개념을 적용하여 자바스크립트 및 타입스크립트로 변환한 사이트입니다",
         img: port06,
@@ -140,7 +150,7 @@ export const portText = [
         name: "영화검색사이트",
     },
     {
-        num: "07",
+        num: "08",
         title: "영화검색 사이트 & AI챗봇 추가(진행중)",
         desc: "OMDb API를 활용해 store&router 개념을 적용하여 자바스크립트 및 타입스크립트로 변환한 사이트입니다. chat gpt API 도입",
         img: port07,
@@ -149,7 +159,7 @@ export const portText = [
         name: "영화검색사이트",
     },
     {
-        num: "08",
+        num: "09",
         title: "사회적약자 대중교통 예약시스템(진행중)",
         desc: "카카오 맵 & 공공데이터 포털API 사용 java script & jquery & python flask서버 활용",
         img: port08,
